@@ -12,7 +12,7 @@ print("Extracting answers from the answer page...")
 answers = get_answers(answer_page_filename)
 print("Answers have been extracted.")
 
-print("\033[1m" + "You have 3 seconds to go to the new quiz page and click on the first answer box. Do not press or click anything until you see the bot enter the last answer." + "\033[0m")
+print("\033[1m" + "You have 3 seconds to go to the new quiz page and click on the first answer box." + "\033[0m")
 time.sleep(3)
 
 print("Entering in answers...")
