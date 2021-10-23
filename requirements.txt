@@ -1,0 +1,2 @@
+PyAutoGUI==0.9.53
+beautifulsoup4==4.10.0
