@@ -15,5 +15,3 @@ def get_answers(answer_page_filename):
         question_number += 1
     
     return answers
-
-
