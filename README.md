@@ -29,3 +29,10 @@ You can install both of these by running `pip install -r requirements.txt`
 * `get_answers.py` contains the `get_answers` function that takes a filename as an argument (you'll have to install the answer page) and uses [web scraping](https://en.wikipedia.org/wiki/Web_scraping) to extract the correct answers from the quiz.
 * `put_answers.py` contains the `put_answers` function that takes a list with the correct answers as an argument and uses GUI automation (using a program to simulate key presses and clicks) to put in answers in quia quiz input boxes.
 * `main.py` adds user friendliness and is the main file (the file you run).
+
+## TODO
+
+- [ ] Decrease time of following "Usage" steps
+  - [ ]  Make it possible to run `main.py` from file explorer (remove input and provide instructions)
+- [ ] Make a way for non-coders to fully understand all instructions (including installing `git`, using `git clone`, opening terminal, etc.)
+- [ ] Add comments
