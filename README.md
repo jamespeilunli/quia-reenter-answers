@@ -35,4 +35,5 @@ You can install both of these by running `pip install -r requirements.txt`
 - [ ] Decrease time of following "Usage" steps
   - [ ]  Make it possible to run `main.py` from file explorer (remove input and provide instructions)
 - [ ] Make a way for non-coders to fully understand all instructions (including installing `git`, using `git clone`, opening terminal, etc.)
+- [ ] Make code error-proof (using try-except)
 - [ ] Add comments
