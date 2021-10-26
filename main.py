@@ -1,5 +1,6 @@
 import time
 import os
+import shutil
 from get_answers import get_answers
 from put_answers import put_answers
 
@@ -13,3 +14,8 @@ else:
 answers = get_answers(answer_page_filename)
 time.sleep(3)
 put_answers(answers)
+
+os.remove(answer_page_filename)
+if os.path.isdir(answer_page_filename[:-5] + "_files"):
+    shutil.rmtree(answer_page_filename[:-5] + "_files")
+
