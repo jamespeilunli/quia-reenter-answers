@@ -6,12 +6,10 @@ def get_answers(answer_page_filename):
     soup = BeautifulSoup(contents, "html.parser")
     
     answers = []
-    question_number = 1
-    for question in soup.find_all("li"): # li elements contain answers
-        if question.div.font["color"] == "green": # <div><font color="green" ... means answer is correct
-            answers.append(question.div.font.span.get_text())
-        else: # color is red
+    for answer in soup.find_all("font", attrs={"class": "quia_standard", "color": True}): # <font class="quia_standard" color="..." ... contain answers
+        if answer["color"] == "green": # <font color="green" ... means answer is correct
+            answers.append(answer.span.get_text())
+        else: # color is red, answer is wrong
             answers.append("")
-        question_number += 1
     
     return answers
