@@ -6,7 +6,7 @@ def get_answers(answer_page_filename):
     soup = BeautifulSoup(contents, "html.parser")
     
     answers = []
-    for answer in soup.find_all("font", attrs={"class": "quia_standard", "color": True}): # <font class="quia_standard" color="..." ... contain answers
+    for answer in soup.find_all("font", attrs={"color": ["green", "red"]}): # <font color="green or red" ... contain answers
         if answer["color"] == "green": # <font color="green" ... means answer is correct
             answers.append(answer.span.get_text())
         else: # color is red, answer is wrong
