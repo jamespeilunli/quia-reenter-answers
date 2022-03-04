@@ -1,3 +1,4 @@
+import sys
 import time
 import os
 import shutil
@@ -12,7 +13,10 @@ else:
     answer_page_filename = os.path.expanduser("~") + \
         "/Downloads/quia_answer_page.html"
 answers = get_answers(answer_page_filename)
-time.sleep(3)
+if len(sys.argv) == 1:
+    time.sleep(3)
+else:
+    time.sleep(int(sys.argv[1]))
 put_answers(answers)
 
 os.remove(answer_page_filename)

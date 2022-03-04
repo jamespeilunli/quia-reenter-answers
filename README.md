@@ -19,7 +19,7 @@ You can install both of these by running `pip install -r requirements.txt`
 3. For Chrome: Save the page in the new window by using the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>S</kbd> on Linux and Windows, and <kbd>Cmd</kbd>+<kbd>S</kbd> on Mac. Make sure you save it in the Downloads directory, and that it's named `quia_answer_page.html`. A directory might be created with the name `quia_answer_page_files`. The program will automatically delete this directory at the end.
 4. Open and start a new instance of the same Quia quiz.
 5. Run the program. On Mac, you can open Finder, go to the directory where you stored the `main.py` file, right click on it, click on Open With, and then click on Python Launcher. On Windows, you can open File Explorer, go to the directory where you stored the `main.py` file, and double click it. Linux users probably know how to run `main.py` via command line, so I won't give instructions for Linux on this step.
-6. Go back to the page with the new instance of the Quia quiz, and click on the first answer box. The program will give you 3 seconds to do this. 
+6. Go back to the page with the new instance of the Quia quiz, and click on the first answer box. The program will give you 3 seconds to do this. You can change this wait time by providing a stdin parameter for the amount of seconds to wait if you run from terminal (i.e. `python main.py 1` for waiting 1 second).
 7. The program will automatically type in answers in the answer boxes. Do not press anything or click anywhere in the time that the program is still typing in the answers.
 8. The `quia_answer_page.html` file and `quia_answer_page_files` directory will be deleted by the program.
 
